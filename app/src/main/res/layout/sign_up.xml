@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="com.velmamukanga.mylibrary.AboutUs">
+    tools:context="com.velmamukanga.mylibrary.SignUp">
+
 
     <TextView
         android:id="@+id/textView4"
@@ -29,6 +30,7 @@
         android:hint="Velma"
         android:inputType="textPersonName"
         android:text="Name"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
@@ -43,6 +45,7 @@
         android:ems="10"
         android:hint="velmaakochi1@gmail"
         android:inputType="textEmailAddress"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,6 +63,7 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -73,8 +77,11 @@
         android:layout_marginStart="119dp"
         android:layout_marginBottom="88dp"
         android:text="login"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
