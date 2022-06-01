@@ -13,8 +13,8 @@ import butterknife.ButterKnife;
 public class SignUp extends AppCompatActivity {
 
 
-    @BindView(R.id.button)
-    Button button;
+    @BindView(R.id.button2)
+    Button button2;
 
 
     @Override
@@ -23,7 +23,7 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.sign_up);
 
         ButterKnife.bind(this);
-        Button button = (Button)findViewById(R.id.button);
+        Button button = (Button)findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
