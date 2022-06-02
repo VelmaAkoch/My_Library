@@ -14,6 +14,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @BindView(R.id.button3)
     Button button2;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
