@@ -10,21 +10,24 @@ import android.widget.Button;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class Login extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
-    @BindView(R.id.button3)
+
+    @BindView(R.id.button2)
     Button button2;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.sign_up);
 
         ButterKnife.bind(this);
-        Button button = (Button)findViewById(R.id.button3);
+        Button button = (Button)findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Books.class);
+                Intent intent = new Intent(SignUp.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
