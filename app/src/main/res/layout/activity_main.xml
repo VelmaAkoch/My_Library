@@ -33,7 +33,6 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:text="This is an online library where a user can log in and access the books they want to read"
         android:textColor="@color/white"
         android:textSize="24sp"
