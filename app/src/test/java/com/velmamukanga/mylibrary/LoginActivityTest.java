@@ -11,12 +11,12 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
 @RunWith(RobolectricTestRunner.class)
-public class LoginTest {
-    Login loginActivity;
+public class LoginActivityTest {
+    LoginActivity loginActivity;
 
     @Before
     public void setUp() throws Exception {
-        loginActivity = Robolectric.buildActivity(Login.class).create().start().resume().get();
+        loginActivity = Robolectric.buildActivity(LoginActivity.class).create().start().resume().get();
     }
 
     @Test
