@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="com.velmamukanga.mylibrary.SignUp">
+    tools:context="com.velmamukanga.mylibrary.SignUpActivity">
 
 
     <TextView
@@ -17,27 +17,33 @@
         android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/velma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/velma"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="47dp"
-        android:ems="10"
-        android:hint="Velma"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="47dp"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Velma"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
 
+    </com.google.android.material.textfield.TextInputLayout>
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
