@@ -4,8 +4,6 @@ import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-import java.util.jar.Attributes;
-
 public class Validator {
     public boolean validateName(TextInputLayout name){
         if (name.getEditText().getText().toString().isEmpty()){

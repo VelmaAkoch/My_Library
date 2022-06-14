@@ -14,16 +14,16 @@
         android:theme="@style/Theme.MyLibrary"
         tools:targetApi="31" >
         <activity
-            android:name=".LoginActivity"
+            android:name="com.velmamukanga.mylibrary.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".BooksActivity"
+            android:name="com.velmamukanga.mylibrary.BooksActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.velmamukanga.mylibrary.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.velmamukanga.mylibrary.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
