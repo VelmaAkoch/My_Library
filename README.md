@@ -1,4 +1,4 @@
-# My_Library
+# Meal_API
 An Android mobile application where a user can log in to access a book they want to read. And this is a cieved by looking at types of the book too. 
 
 ## Author
