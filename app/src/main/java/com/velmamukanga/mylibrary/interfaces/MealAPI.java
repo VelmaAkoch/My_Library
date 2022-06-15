@@ -9,7 +9,7 @@ import retrofit2.http.Query;
 public interface MealAPI {
     @GET("search.php")
     Call<RandomMeal> getrandommeal(
-            @Query("f") String letter
+            @Query("s") String letter
     );
 
 }

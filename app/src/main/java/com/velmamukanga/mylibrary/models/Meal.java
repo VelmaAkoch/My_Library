@@ -3,6 +3,9 @@ package com.velmamukanga.mylibrary.models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Meal {
 
     @SerializedName("idMeal")
@@ -11,9 +14,7 @@ public class Meal {
     @SerializedName("strMeal")
     @Expose
     private String strMeal;
-    @SerializedName("strDrinkAlternate")
-    @Expose
-    private Object strDrinkAlternate;
+
     @SerializedName("strCategory")
     @Expose
     private String strCategory;
@@ -155,15 +156,6 @@ public class Meal {
     @SerializedName("strSource")
     @Expose
     private String strSource;
-    @SerializedName("strImageSource")
-    @Expose
-    private Object strImageSource;
-    @SerializedName("strCreativeCommonsConfirmed")
-    @Expose
-    private Object strCreativeCommonsConfirmed;
-    @SerializedName("dateModified")
-    @Expose
-    private Object dateModified;
 
     /**
      * No args constructor for use in serialization
@@ -172,7 +164,6 @@ public class Meal {
     }
 
     /**
-     * @param strImageSource
      * @param strIngredient10
      * @param strIngredient12
      * @param strIngredient11
@@ -184,7 +175,6 @@ public class Meal {
      * @param strIngredient18
      * @param strIngredient17
      * @param strArea
-     * @param strCreativeCommonsConfirmed
      * @param strIngredient19
      * @param strTags
      * @param idMeal
@@ -207,8 +197,6 @@ public class Meal {
      * @param strMeasure13
      * @param strMeasure10
      * @param strMeasure11
-     * @param dateModified
-     * @param strDrinkAlternate
      * @param strSource
      * @param strMeasure9
      * @param strMeasure7
@@ -226,11 +214,10 @@ public class Meal {
      * @param strMeasure14
      * @param strMeasure15
      */
-    public Meal(String idMeal, String strMeal, Object strDrinkAlternate, String strCategory, String strArea, String strInstructions, String strMealThumb, String strTags, String strYoutube, String strIngredient1, String strIngredient2, String strIngredient3, String strIngredient4, String strIngredient5, String strIngredient6, String strIngredient7, String strIngredient8, String strIngredient9, String strIngredient10, String strIngredient11, String strIngredient12, String strIngredient13, String strIngredient14, String strIngredient15, String strIngredient16, String strIngredient17, String strIngredient18, String strIngredient19, String strIngredient20, String strMeasure1, String strMeasure2, String strMeasure3, String strMeasure4, String strMeasure5, String strMeasure6, String strMeasure7, String strMeasure8, String strMeasure9, String strMeasure10, String strMeasure11, String strMeasure12, String strMeasure13, String strMeasure14, String strMeasure15, String strMeasure16, String strMeasure17, String strMeasure18, String strMeasure19, String strMeasure20, String strSource, Object strImageSource, Object strCreativeCommonsConfirmed, Object dateModified) {
+    public Meal(String idMeal, String strMeal, String strCategory, String strArea, String strInstructions, String strMealThumb, String strTags, String strYoutube, String strIngredient1, String strIngredient2, String strIngredient3, String strIngredient4, String strIngredient5, String strIngredient6, String strIngredient7, String strIngredient8, String strIngredient9, String strIngredient10, String strIngredient11, String strIngredient12, String strIngredient13, String strIngredient14, String strIngredient15, String strIngredient16, String strIngredient17, String strIngredient18, String strIngredient19, String strIngredient20, String strMeasure1, String strMeasure2, String strMeasure3, String strMeasure4, String strMeasure5, String strMeasure6, String strMeasure7, String strMeasure8, String strMeasure9, String strMeasure10, String strMeasure11, String strMeasure12, String strMeasure13, String strMeasure14, String strMeasure15, String strMeasure16, String strMeasure17, String strMeasure18, String strMeasure19, String strMeasure20, String strSource) {
         super();
         this.idMeal = idMeal;
         this.strMeal = strMeal;
-        this.strDrinkAlternate = strDrinkAlternate;
         this.strCategory = strCategory;
         this.strArea = strArea;
         this.strInstructions = strInstructions;
@@ -278,9 +265,6 @@ public class Meal {
         this.strMeasure19 = strMeasure19;
         this.strMeasure20 = strMeasure20;
         this.strSource = strSource;
-        this.strImageSource = strImageSource;
-        this.strCreativeCommonsConfirmed = strCreativeCommonsConfirmed;
-        this.dateModified = dateModified;
     }
 
     public String getIdMeal() {
@@ -297,14 +281,6 @@ public class Meal {
 
     public void setStrMeal(String strMeal) {
         this.strMeal = strMeal;
-    }
-
-    public Object getStrDrinkAlternate() {
-        return strDrinkAlternate;
-    }
-
-    public void setStrDrinkAlternate(Object strDrinkAlternate) {
-        this.strDrinkAlternate = strDrinkAlternate;
     }
 
     public String getStrCategory() {
@@ -683,29 +659,6 @@ public class Meal {
         this.strSource = strSource;
     }
 
-    public Object getStrImageSource() {
-        return strImageSource;
-    }
-
-    public void setStrImageSource(Object strImageSource) {
-        this.strImageSource = strImageSource;
-    }
-
-    public Object getStrCreativeCommonsConfirmed() {
-        return strCreativeCommonsConfirmed;
-    }
-
-    public void setStrCreativeCommonsConfirmed(Object strCreativeCommonsConfirmed) {
-        this.strCreativeCommonsConfirmed = strCreativeCommonsConfirmed;
-    }
-
-    public Object getDateModified() {
-        return dateModified;
-    }
-
-    public void setDateModified(Object dateModified) {
-        this.dateModified = dateModified;
-    }
 }
 
 

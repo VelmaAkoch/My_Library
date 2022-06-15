@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.velmamukanga.mylibrary.BooksActivity">
+    tools:context="com.velmamukanga.mylibrary.MealListActivity">
 
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="My Books"
+        android:layout_marginTop="20dp"
+        android:text="My Meal"
         android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold"
@@ -21,8 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/ListView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintLeft_toLeftOf="parent"

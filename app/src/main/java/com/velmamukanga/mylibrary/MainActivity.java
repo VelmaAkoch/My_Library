@@ -12,8 +12,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.button)
-    Button button;
+    @BindView(R.id.button) Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

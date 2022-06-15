@@ -1,6 +1,8 @@
 package com.velmamukanga.mylibrary.models;
 
 
+import android.location.Address;
+
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -35,5 +37,20 @@ public class RandomMeal {
         this.meals = meals;
     }
 
+    public <Business> void getRandomMeal() {
+    }
+
+    public void getName() {
+    }
+
+    public Address getCoordinates() {
+        return null;
+    }
+
+    public void getPhone() {
+    }
+
+    public void getUrl() {
+    }
 }
 

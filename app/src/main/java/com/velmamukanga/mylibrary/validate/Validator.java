@@ -5,8 +5,8 @@ import android.widget.EditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class Validator {
-    public boolean validateName(TextInputLayout name){
-        if (name.getEditText().getText().toString().isEmpty()){
+    public boolean validateName(EditText name){
+        if (name.getText().toString().isEmpty()){
             name.setError("please enter your name");
             return false;
         }

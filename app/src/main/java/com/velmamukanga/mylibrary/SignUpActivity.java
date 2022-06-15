@@ -18,17 +18,10 @@ import butterknife.ButterKnife;
 public class SignUpActivity extends AppCompatActivity {
 
 
-    @BindView(R.id.button2)
-    Button button2;
-
-    @BindView(R.id.velma)
-    TextInputLayout name;
-
-    @BindView(R.id.editTextTextEmailAddress)
-   EditText email;
-
-    @BindView(R.id.editTextTextPassword)
-    EditText password;
+    @BindView(R.id.button2)Button button2;
+    @BindView(R.id.editTextTextName ) EditText name;
+    @BindView(R.id.editTextTextEmailAddress) EditText email;
+    @BindView(R.id.editTextTextPassword) EditText password;
 
 
     @Override
@@ -48,7 +41,7 @@ public class SignUpActivity extends AppCompatActivity {
                 if (!susan.validateName(name) || ! susan.validateEmail(email) || ! susan.validatePassword(password)){
                     return;
                 }
-                String username = name.getEditText().getText().toString();
+                String username = name.getText().toString();
                 Toast.makeText(SignUpActivity.this,username,Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
                 startActivity(intent);
