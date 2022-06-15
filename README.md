@@ -1,4 +1,4 @@
-# My_Library
+# Meal_API
 An Android mobile application which implement web services and custom fragments in Android,An android API application where one can find type of meal and all information about it.A user has to log in to access a they want to eat. And this is a cieved by meal dta base Api. 
 
 ## Author
