@@ -1,11 +1,15 @@
 # Meal_API
+<<<<<<< HEAD
 An Android mobile application where a user can log in to access a book they want to read. And this is a cieved by looking at types of the book too. 
+=======
+An Android mobile application which implement web services and custom fragments in Android,An android API application where one can find type of meal and all information about it.A user has to log in to access a they want to eat. And this is a cieved by meal dta base Api. 
+>>>>>>> 7bddf7f1dc82f7b81d88da39f30098859f2763f7
 
 ## Author
 By Velma Mukanga.
 
 ## Description
-The Mobile Application is still in development. Currently, the existing features include form validation, capturing inputs such as the name of the user, their preferred novels to read. Functionalities to be added include allowing users to search for novel while taking into consideration their preferred book and any other book that they may have. Moreover users should be able view various book types and their corresponding books.
+The Mobile Application is still in development. Currently, the existing features include form validation, capturing inputs such as the name of the user, their preferred meals to eat. Functionalities to be added include allowing users to search for meal while taking into consideration their preferred meal and any other meal that they may have. Moreover users should be able view various meal type and there corresponding meals fetched via MealDB API.Other functionalities included are users being able to starrmeals that might have peaked their interest, for later eating and authenticating users. Aside from this, users can also search for meals using keywords like 'Chicken'.
 
 ## Setup/Installation Requirements
 - Using a mobile device/laptop ensure you have access to stable internet connection
@@ -21,7 +25,8 @@ The Mobile Application is still in development. Currently, the existing features
 ## Prerequisites
 - Install Sdkman that allows for management of multiple Java versions
 - Install Java
-- Installing Android Studio
+
+## Installing Android Studio
 - You can download installer from https://developer.android.com/studio#downloads
 - For Linux you can install via the command below
  $ sudo snap install android-studio --classic
@@ -37,8 +42,10 @@ The Mobile Application is still in development. Currently, the existing features
 ## Dependencies
 - Java
 - Espresso Testing Framework
-- Roboelectric Testing Frameowrk
+- Robolectric Testing Framework
 - JUnit Testing Framework
+- Retrofit
+- Gson Converter
 
 ## Technologies Used
 - Android Framework
