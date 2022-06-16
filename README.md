@@ -1,9 +1,5 @@
-# Meal_API
-<<<<<<< HEAD
-An Android mobile application where a user can log in to access a book they want to read. And this is a cieved by looking at types of the book too. 
-=======
-An Android mobile application which implement web services and custom fragments in Android,An android API application where one can find type of meal and all information about it.A user has to log in to access a they want to eat. And this is a cieved by meal dta base Api. 
->>>>>>> 7bddf7f1dc82f7b81d88da39f30098859f2763f7
+# Meal_AP
+An Android mobile application that implements web services and custom fragments in Android, An android API application where one can find the type of meal and all information about it. A user has to log in to access what they want to eat. And this is achieved by meal database API. 
 
 ## Author
 By Velma Mukanga.
