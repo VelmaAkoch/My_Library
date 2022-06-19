@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "675066498535",
+    "project_id": "mylibrary-830df",
+    "storage_bucket": "mylibrary-830df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675066498535:android:164188a40b740b95244142",
+        "android_client_info": {
+          "package_name": "com.velmamukanga.mylibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675066498535-rmrholgh7pbar9f423uukur29thl7n82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKdNwIjCa3C2TwDHpr9SyEgx_aTDxzewk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675066498535-rmrholgh7pbar9f423uukur29thl7n82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
