@@ -1,11 +1,11 @@
 # Meal_AP
-An Android mobile application that implements web services and custom fragments in Android, An android API application where one can find the type of meal and all information about it. A user has to log in to access what they want to eat. And this is achieved by meal database API. 
+An Android mobile application that implements firebase user authentication,it saves and retrieves data using Firebase, making sure to structure data according to Firebase guidelines. It employs the Firebase-RecyclerAdapter to display from database and Utilizes dialogs to inform users of login status.
 
 ## Author
 By Velma Mukanga.
 
 ## Description
-The Mobile Application is still in development. Currently, the existing features include form validation, capturing inputs such as the name of the user, their preferred meals to eat. Functionalities to be added include allowing users to search for meal while taking into consideration their preferred meal and any other meal that they may have. Moreover users should be able view various meal type and there corresponding meals fetched via MealDB API.Other functionalities included are users being able to starrmeals that might have peaked their interest, for later eating and authenticating users. Aside from this, users can also search for meals using keywords like 'Chicken'.
+The Mobile Application is still in development. Currently, the existing features include form validation, capturing inputs such as the name of the user, find their meals and save them. Functionalities to be added include allowing users to add their favourite Gifs of meal while taking into consideration their preferred meal and any other meal that they may have. Moreover users should be able view various meal type and there corresponding meals fetched via MealDB API.Other functionalities included are users being able to starrmeals that might have peaked their interest, for later eating and authenticating users. 
 
 ## Setup/Installation Requirements
 - Using a mobile device/laptop ensure you have access to stable internet connection
@@ -42,6 +42,7 @@ The Mobile Application is still in development. Currently, the existing features
 - JUnit Testing Framework
 - Retrofit
 - Gson Converter
+- Firebase.
 
 ## Technologies Used
 - Android Framework
