@@ -16,19 +16,24 @@
         android:theme="@style/Theme.MyLibrary"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".SavedMealListActivity"
             android:exported="false" />
         <activity
-            android:name="com.velmamukanga.mylibrary.ui.LoginActivity"
+            android:name=".ui.CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MealDetailActivity"
-            android:exported="false" />
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".validate.MealListActivity" -->
+        <!-- android:exported="false" /> -->
         <activity
-            android:name="com.velmamukanga.mylibrary.MealListActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.velmamukanga.mylibrary.MainActivity"
+            android:name=".animation"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

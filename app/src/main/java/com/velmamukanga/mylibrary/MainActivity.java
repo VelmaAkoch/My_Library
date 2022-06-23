@@ -11,16 +11,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.velmamukanga.mylibrary.ui.CreateAccountActivity;
+import com.velmamukanga.mylibrary.ui.LoginActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.button)
-    Button mFindMealButton;
-    @BindView(R.id.savedMealsButton)
-    Button mSavedMealsButton;
+    @BindView(R.id.button) Button mFindMealButton;
+
+//    @BindView(R.id.savedMealsButton)
+//    Button mSavedMealsButton;
 
 
     private FirebaseAuth mAuth;
@@ -53,8 +55,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mFindMealButton.setOnClickListener(this);
-        mSavedMealsButton.setOnClickListener(this);
+        mFindMealButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CreateAccountActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        mFindMealButton.setOnClickListener(this);
+//        mSavedMealsButton.setOnClickListener(this);
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -105,20 +115,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    public void onClick(View v) {
-        if (v == mFindMealButton) {
-            Intent intent = new Intent(MainActivity.this, MealListActivity.class);
-            startActivity(intent);
-        }
+//    @Override
+//    public void onClick(View v) {
+//        if (v == mFindMealButton) {
+//            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//            startActivity(intent);
+//        }
+//
+//           Intent intent = new Intent(MainActivity.this, SavedMealListActivity.class);
+//            startActivity(intent);
+//        }
+//        if (v == mSavedMealsButton) {
+//
+//    }
 
-        if (v == mSavedMealsButton) {
-            Intent intent = new Intent(MainActivity.this, SavedMealListActivity.class);
-            startActivity(intent);
-        }
 
     }
-}
+
 
 
 //        mSearchedLocationReference = FirebaseDatabase

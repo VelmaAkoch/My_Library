@@ -52,7 +52,7 @@
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_meals);
+//        setContentView(R.layout.meal_list_item);
 //        ButterKnife.bind(this);
 //
 //        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -118,39 +118,39 @@
 //        mEditor.putString(Constants.PREFERENCES_LOCATION_KEY, location).apply();
 //    }
 //
-//    private void fetchMeals(String location){
-//        YelpApi client = YelpClient.getClient();
-//        Call<YelpBusinessesSearchResponse> call = client.getMeals(location, "restaurants");
-//        call.enqueue(new Callback<YelpBusinessesSearchResponse>() {
-//            @Override
-//            public void onResponse(Call<YelpBusinessesSearchResponse> call, Response<YelpBusinessesSearchResponse> response) {
-//
-//                hideProgressBar();
-//
-//                if (response.isSuccessful()) {
-//                    meals = response.body().getBusinesses();
-//                    mAdapter = new MealListAdapter(MealListActivity.this, meals);
-//                    mRecyclerView.setAdapter(mAdapter);
-//                    RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MealListActivity.this);
-//                    mRecyclerView.setLayoutManager(layoutManager);
-//                    mRecyclerView.setHasFixedSize(true);
-//
-//                    showRestaurants();
-//                } else {
-//                    showUnsuccessfulMessage();
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<YelpBusinessesSearchResponse> call, Throwable t) {
-//                Log.e(TAG, "onFailure: ",t );
-//                hideProgressBar();
-//                showFailureMessage();
-//            }
-//
-//        });
-//    }
-//}
+////    private void fetchMeals(String location){
+////        YelpApi client = YelpClient.getClient();
+////        Call<YelpBusinessesSearchResponse> call = client.getMeals(location, "restaurants");
+////        call.enqueue(new Callback<YelpBusinessesSearchResponse>() {
+////            @Override
+////            public void onResponse(Call<YelpBusinessesSearchResponse> call, Response<YelpBusinessesSearchResponse> response) {
+////
+////                hideProgressBar();
+////
+////                if (response.isSuccessful()) {
+////                    meals = response.body().getBusinesses();
+////                    mAdapter = new MealListAdapter(MealListActivity.this, meals);
+////                    mRecyclerView.setAdapter(mAdapter);
+////                    RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MealListActivity.this);
+////                    mRecyclerView.setLayoutManager(layoutManager);
+////                    mRecyclerView.setHasFixedSize(true);
+////
+////                    showRestaurants();
+////                } else {
+////                    showUnsuccessfulMessage();
+////                }
+////            }
+////
+////            @Override
+////            public void onFailure(Call<YelpBusinessesSearchResponse> call, Throwable t) {
+////                Log.e(TAG, "onFailure: ",t );
+////                hideProgressBar();
+////                showFailureMessage();
+////            }
+////
+////        });
+////    }
+////}
 //
 //
 ////            @Override

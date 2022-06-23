@@ -29,10 +29,14 @@ public class MealListAdapter extends RecyclerView.Adapter<MealListAdapter.MealVi
     private List<Meal> meals;
     private Context mContext;
 
-    public MealListAdapter(Context context, List<RandomMeal> meals) {
-        mContext = context;
+
+    public MealListAdapter(List<Meal> meals, Context mContext) {
         this.meals = meals;
+        this.mContext = mContext;
     }
+
+
+
 
 
     @NonNull
