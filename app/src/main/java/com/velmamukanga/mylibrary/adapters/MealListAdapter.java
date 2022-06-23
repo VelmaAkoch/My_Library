@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import com.velmamukanga.mylibrary.R;
 import com.velmamukanga.mylibrary.models.Meal;
+import com.velmamukanga.mylibrary.models.RandomMeal;
 import com.velmamukanga.mylibrary.ui.MealDetailActivity;
 
 import org.parceler.Parcels;
@@ -28,7 +29,7 @@ public class MealListAdapter extends RecyclerView.Adapter<MealListAdapter.MealVi
     private List<Meal> meals;
     private Context mContext;
 
-    public MealListAdapter(Context context, List<Meal> meals) {
+    public MealListAdapter(Context context, List<RandomMeal> meals) {
         mContext = context;
         this.meals = meals;
     }
