@@ -1,4 +1,4 @@
-# Meal_AP
+# Meal_Gifs
 An Android mobile application that implements firebase user authentication,it saves and retrieves data using Firebase, making sure to structure data according to Firebase guidelines. It employs the Firebase-RecyclerAdapter to display from database and Utilizes dialogs to inform users of login status.
 
 ## Author
